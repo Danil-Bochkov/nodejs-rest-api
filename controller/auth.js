@@ -13,7 +13,7 @@ const {SECRET_KEY, BASE_URL} = process.env;
 
 
 const register = async(req, res) => {
-    const { email, password, name } = req.body;
+    const { email, password } = req.body;
     const user = await User.findOne({email});
 
     if(user) {

@@ -1,7 +1,5 @@
 const { HttpError, ctrlWrapper } = require('../helpers')
 const { Contact } = require('../models/contact');
-const { ObjectId } = require('mongodb');
-
 
 const get = async (req, res, next) => {
   const {_id: owner} = req.user;
