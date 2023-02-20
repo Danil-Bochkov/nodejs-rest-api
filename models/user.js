@@ -2,6 +2,7 @@ const Joi = require('joi');
 const { Schema, model } = require('mongoose');
 const { handleMongooseError } = require('../helpers');
 
+// eslint-disable-next-line no-useless-escape
 const emailRegexp = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/
 const subscriptions = ["starter", "pro", "business"];
 
